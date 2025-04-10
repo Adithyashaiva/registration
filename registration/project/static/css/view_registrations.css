@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5); /* Beautiful gradient background */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin: 20px 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add subtle text shadow */
+}
+
+/* Button Styles */
+a {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    margin: 10px 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+}
+
+a:hover {
+    background-color: #2980b9;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+#one {
+    background-color: #27ae60; /* Green color for 'Add New Registration' button */
+}
+
+#one:hover {
+    background-color: #229954; /* Darker green on hover */
+}
+
+/* Table Styles */
+table {
+    width: 95%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+thead th {
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1; /* Subtle highlight on hover */
+}
+
+tbody td {
+    padding: 15px;
+    text-align: center;
+    font-size: 0.95em;
+}
+
+tbody td a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #3498db;
+    padding: 7px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+tbody td a:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    table {
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    thead th, tbody td {
+        padding: 10px;
+    }
+
+    a {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+}

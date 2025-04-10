@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Registrations</title>
+    <link rel="stylesheet" href="{% static 'css/view_registrations.css' %}">
+</head>
+<body>
+    <h1>Registrations</h1><br><br>
+    <table border=2px>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Date of Birth</th>
+                <th>Gender</th>
+                <th>Age</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for registration in registrations %}
+            <tr>
+                <td>{{ registration.id }}</td>
+                <td>{{ registration.name }}</td>
+                <td>{{ registration.email }}</td>
+                <td>{{ registration.date_of_birth }}</td>
+                <td>{{ registration.get_gender_display }}</td>
+                <td>{{ registration.age }}</td>
+                <td>
+                    <a href="{% url 'update_registration' registration.id %}">Edit</a>
+                    <a href="{% url 'delete_registration' registration.id %}">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+   <center><a href="{% url 'create_registration' %}" id="one">Add New Registration</a></center>
+</body>
+</html>
