@@ -13,3 +13,12 @@ A Django-based web application to manage registrations with Create, Read, Update
 - Form validation on both frontend and backend.
 - MySQL database integration for reliable data storage.
 - Responsive design for cross-device compatibility.
+
+
+## Technologies Used
+
+- **Backend**: Django Framework
+- **Frontend**: HTML, CSS, JavaScript
+- **Database**: MySQL
+- **Styling**: Unique CSS files for each page
+- **Version Control**: Git and GitHub
