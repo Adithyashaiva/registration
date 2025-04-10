@@ -58,7 +58,7 @@ Make any changes in database:
    python manage.py migrate
 
 
-To runserver:
+To run the server:
 
 ---> cd registration
 ---> py manage.py runserver  / python manage.py runserver
