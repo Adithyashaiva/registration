@@ -53,7 +53,15 @@ registration-management-system/
 └── README.md                      # Project documentation
 
 
+Make any changes in database:
+   python manage.py makemigrations
+   python manage.py migrate
 
+
+To runserver:
+
+---> cd registration
+---> py manage.py runserver  / python manage.py runserver
 
 
 
