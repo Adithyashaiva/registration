@@ -22,3 +22,38 @@ A Django-based web application to manage registrations with Create, Read, Update
 - **Database**: MySQL
 - **Styling**: Unique CSS files for each page
 - **Version Control**: Git and GitHub
+
+
+## Project Structure
+
+registration-management-system/
+├── registration/                  # Django project directory
+│   ├── settings.py                # Project settings
+│   ├── urls.py                    # Project URL configurations
+│   ├── wsgi.py                    # WSGI application
+├── project/                       # Django app directory
+│   ├── models.py                  # Database models
+│   ├── views.py                   # Application views
+│   ├── forms.py                   # Form validation
+│   ├── urls.py                    # App URL configurations
+│   ├── templates/                 # HTML templates
+│   │   ├── create_registration.html
+│   │   ├── view_registrations.html
+│   │   ├── update_registration.html
+│   │   ├── delete_registration.html
+│   ├── static/                    # Static files (CSS, JS)
+│       ├── css/
+│           ├── create_registration.css
+│           ├── view_registrations.css
+│           ├── update_registration.css
+│           ├── delete_registration.css
+├── db.sqlite3                     # SQLite database (if used for development)
+├── manage.py                      # Django management script
+├── requirements.txt               # Python dependencies
+└── README.md                      # Project documentation
+
+
+
+
+
+
